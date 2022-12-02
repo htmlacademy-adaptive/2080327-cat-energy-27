@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Energy</title>
+</head>
+<body class="page-body">
+ <header class="main-header">
+   <div class="main-header__logo">
+     <img class="main-header__header-logo" src="img/header-logo.svg" width="34" height="38" alt="логотип cat energy">
+   </div>
+   <div class="main-header__caption">
+     <img class="main-header__header-caption" src="img/header-caption.svg" width="101" height="18">
+   </div>
+   <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">
+        Открыть меню
+      </span>
+    </button>
+     <div class="main-nav__wrapper">
+       <ul class="main-nav__list">
+         <li class="list__item">
+           <a href="#">
+             Главная
+           </a>
+         </li>
+         <li class="list__item">
+           <a href="#">
+             Каталог продукции
+           </a>
+         </li>
+         <li class="list__item">
+           <a href="#">
+             Подбор программы
+           </a>
+         </li>
+       </ul>
+     </div>
+   </nav>
+ </header>
+   <main class="main-container">
+     <section class="lead" >
+       <h1 class="lead__caption">
+       Функциональное питание для котов
+     </h1>
+       <p class="lead__slogan">
+         занялся собой?займись котом!
+       </p>
+       <img class="lead__product-picture" src="img/product-picture.png" width="280" height="270" alt="упаковка корма">
+       <a class="lead__button button" href="#">
+         подобрать программу
+       </a>
+     </section>
+     <section class="programs">
+       <!--а сектион ли?-->
+       <div class="programs__program">
+         <!--зочу здесь заголовок и картинку дивом обернуть, но будет ли в потоке-->
+         <img class="program__img-cat" src="img/program-cat.svg" width="36" height="50" alt="кот">
+         <!--кот без зеленого круга, так как его сделать css-->
+         <div class="program__caption">
+           похудение
+         </div>
+         <p class="program__text">
+           Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+         </p>
+         <a class="program__link" href="#" >
+           каталог slim
+         </a>
+         <!--тут нужна стрелка - ставим как свг в код или обкрнуть эти 2 элемента?-->
+       </div>
+       <!--вот тут это все скопирую как второй блок с нужной картинкой-->
+     </section>
+     <section class="benefits">
+      <h2 class="benefits-caption section-caption">
+        Как это работает
+      </h2>
+       <ul class="benefits-list">
+         <li class="benefits-list__item">
+           <img class="item__icon-sheet" src="img/icon-sheet.svg" width="26" height="28" alt="иконка лист">
+           <p class="item__desc">
+             Функциональное питание содержит только полезные питательные вещества.
+           </p>
+           <!--картинку хочется обернуть и задать цвет-->
+         </li>
+         <!--после проверки вставлю еще 3 элемента списка-->
+       </ul>
+     </section>
+     <section class="story">
+       <h2 class="story__caption">
+         Живой пример
+       </h2>
+       <p class="story__text">
+         Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.
+       </p>
+       <div class="story__result">
+         <div class="result__item">
+           <span class="result__weight"> 5 кг
+           </span>
+           <span class="result__desc">
+             снижение веса
+           </span>
+         </div>
+         <div class="result__item">
+           <span class="result__time"> 60 дней
+           </span>
+           <span class="result__desc">
+             затрачено времени
+           </span>
+         </div>
+       </div>
+       <p class="story__caption-cost">
+         Затраты на питание: 15 000 РУБ.
+       </p>
+       <!--картинку не поняла как сделать, по логике там же должго быть 2 кота и всерединне штука двинаться-->
+       <ul class="result-slider">
+         <li class="slider-slide__fat">
+           <img class="fat-cat" src="img/fat-cat.png" width="280" height="256" alt="толстый кот">
+         </li>
+         <li class="???"> стрелки</li>
+         <!--на стрелки не смотри - еще подумаю как сделать-->
+         <li class="slider-slide__slim">
+           <img class="slim-cat" src="img/slim-cat.png" width="280" height="256" alt="худой кот">
+         </li>
+       </ul>
+     </section>
+  </main>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
-  </body>
+</body>
 </html>
