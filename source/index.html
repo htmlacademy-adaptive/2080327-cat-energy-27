@@ -53,11 +53,8 @@
        </a>
      </section>
      <section class="programs">
-       <!--а сектион ли?-->
-       <div class="programs__program">
-         <!--зочу здесь заголовок и картинку дивом обернуть, но будет ли в потоке-->
-         <img class="program__img-cat" src="img/program-cat.svg" width="36" height="50" alt="кот">
-         <!--кот без зеленого круга, так как его сделать css-->
+       <div class="programs__program program">
+         <img class="program__img-cat" src="img/program-cat.svg" width="50" height="53" alt="кот">
          <div class="program__caption">
            похудение
          </div>
@@ -67,23 +64,65 @@
          <a class="program__link" href="#" >
            каталог slim
          </a>
-         <!--тут нужна стрелка - ставим как свг в код или обкрнуть эти 2 элемента?-->
+         <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+           <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+         </svg>
        </div>
-       <!--вот тут это все скопирую как второй блок с нужной картинкой-->
+       <div class="programs__program program">
+         <img class="program__img-tiger" src="img/program-tiger.svg" width="67" height="50" alt="тигр">
+         <div class="program__caption">
+           похудение
+         </div>
+         <p class="program__text">
+           Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+         </p>
+         <a class="program__link" href="#" >
+           каталог slim
+         </a>
+         <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+           <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+         </svg>
+       </div>
      </section>
      <section class="benefits">
-      <h2 class="benefits-caption section-caption">
+      <h2 class="benefits__caption section-caption">
         Как это работает
       </h2>
        <ul class="benefits-list">
-         <li class="benefits-list__item">
-           <img class="item__icon-sheet" src="img/icon-sheet.svg" width="26" height="28" alt="иконка лист">
+         <li class="benefits-list__item item">
+           <div class="item__icon-color">
+             <img class="item__icon-sheet" src="img/icon-sheet.svg" width="26" height="28" alt="иконка лист">
+           </div>
            <p class="item__desc">
              Функциональное питание содержит только полезные питательные вещества.
            </p>
-           <!--картинку хочется обернуть и задать цвет-->
          </li>
-         <!--после проверки вставлю еще 3 элемента списка-->
+         <li class="benefits-list__item item">
+           <div class="item__icon-color">
+             <img class="item__icon-water" src="img/icon-water.svg" width="26" height="29" alt="иконка вода">
+           </div>
+           <p class="item__desc">
+             Выпускается в&nbsp;виде порошка, который нужно лишь залить кипятком и&nbsp;готово.
+           </p>
+         </li>
+         <li class="benefits-list__item item">
+           <div class="item__icon-color">
+             <img class="item__icon-eat" src="img/icon-eat.svg" width="25" height="30" alt="иконка еда">
+           </div>
+           <p class="item__desc">
+             Замените один-два приема обычной еды на&nbsp;наше функциональное питание.
+           </p>
+         </li>
+         <li class="benefits-list__item item">
+           <div class="item__icon-color">
+             <img class="item__icon-time" src="img/icon-time.svg" width="26" height="31"  alt="иконка часы">
+           </div>
+           <p class="item__desc">
+             Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего питомца!
+           </p>
+         </li>
        </ul>
      </section>
      <section class="story">
@@ -93,7 +132,7 @@
        <p class="story__text">
          Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.
        </p>
-       <div class="story__result">
+       <div class="story__result result">
          <div class="result__item">
            <span class="result__weight"> 5 кг
            </span>
@@ -112,19 +151,65 @@
        <p class="story__caption-cost">
          Затраты на питание: 15 000 РУБ.
        </p>
-       <!--картинку не поняла как сделать, по логике там же должго быть 2 кота и всерединне штука двинаться-->
-       <ul class="result-slider">
-         <li class="slider-slide__fat">
+       <div class="result-slider">
+         <div class="slider-slide__fat">
            <img class="fat-cat" src="img/fat-cat.png" width="280" height="256" alt="толстый кот">
-         </li>
-         <li class="???"> стрелки</li>
-         <!--на стрелки не смотри - еще подумаю как сделать-->
-         <li class="slider-slide__slim">
+         </div>
+         <div class="result-slider__arrows">
+           стрелки
+         </div>
+         <div class="slider-slide__slim">
            <img class="slim-cat" src="img/slim-cat.png" width="280" height="256" alt="худой кот">
-         </li>
-       </ul>
+         </div>
+       </div>
+     </section>
+     <section class="cta">
+       <div class="cta__caption">
+         приглашаем к&nbsp;сотрудничеству дилеров!
+       </div>
+       <div class="cta__text">
+         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+       </div>
+       <div class="cta__map">
+         <img class="cta__map-mark" src="img/map-mark.jpg" width="320" height="362" alt="карта с адресом">
+       </div>
      </section>
   </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__footer-caption">
+        <img class="main-footer___footer-caption" src="">
+        <!--вот тут наверно картинка как-то связана с хедером-->
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" >
+              <img class="social__link--vk" src="img/vk.svg">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social-link--youtube" src="img/youtube.svg">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__link--tg" src="img/tg.svg">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer--copyright copyright">
+        <a class="copyright__link" href="#">
+          HTML Academy
+        </a>
+      </div>
+      <div class="main-footer--copyright-logo copyright-logo">
+        <img class="copyright-logo__logo-img" src="img/logo-img.svg" width="27" height="34">
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
